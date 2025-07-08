@@ -154,33 +154,23 @@ class StockDataStreamer extends events_1.EventEmitter {
     }
     async fetchStockQuote(symbol) {
         try {
-            // Mock real-time stock data with realistic price movements
-            const baseStocks = {
-                'AAPL': 195.43,
-                'MSFT': 421.89,
-                'GOOGL': 2834.56,
-                'TSLA': 248.50,
-                'AMZN': 3342.88,
-                'META': 378.25,
-                'NVDA': 875.28,
-                'AMD': 167.89
-            };
-            const basePrice = baseStocks[symbol] || 100;
-            const variation = (Math.random() - 0.5) * 0.015; // ±0.75% variation
-            const newPrice = basePrice * (1 + variation);
-            const change = newPrice - basePrice;
-            const changePercent = (change / basePrice) * 100;
+            logger_1.logger.debug(`Fetching real-time quote for ${symbol}`);
+            const yfinanceData = await this.yfinanceService.getQuote(symbol);
+            if (!yfinanceData) {
+                logger_1.logger.warn(`No real-time data found for ${symbol}`);
+                return null;
+            }
             return {
-                symbol,
-                price: Number(newPrice.toFixed(2)),
-                change: Number(change.toFixed(2)),
-                changePercent: Number(changePercent.toFixed(2)),
-                volume: Math.floor(Math.random() * 50000000) + 10000000,
+                symbol: yfinanceData.symbol,
+                price: yfinanceData.regularMarketPrice,
+                change: yfinanceData.regularMarketChange,
+                changePercent: yfinanceData.regularMarketChangePercent,
+                volume: yfinanceData.regularMarketVolume,
                 timestamp: new Date().toISOString()
             };
         }
         catch (error) {
-            logger_1.logger.error(`Error fetching quote for ${symbol}:`, error);
+            logger_1.logger.error(`Error fetching real-time quote for ${symbol}:`, error);
             return null;
         }
     }

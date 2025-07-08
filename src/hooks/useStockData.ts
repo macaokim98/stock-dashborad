@@ -110,11 +110,14 @@ export const useStockData = () => {
     try {
       setLoading(true);
       
+      // Get backend URL from environment variable or fallback to relative path
+      const API_BASE_URL = process.env.REACT_APP_API_URL || '';
+      
       // Fetch real data from backend API
       const [marketRes, stocksRes, portfolioRes] = await Promise.all([
-        axios.get('/api/stocks/market-overview'),
-        axios.get('/api/stocks/top-gainers').then(res => res.data.data.slice(0, 5)),
-        axios.get('/api/portfolio/overview')
+        axios.get(`${API_BASE_URL}/api/stocks/market-overview`),
+        axios.get(`${API_BASE_URL}/api/stocks/top-gainers`).then(res => res.data.data.slice(0, 5)),
+        axios.get(`${API_BASE_URL}/api/portfolio/overview`)
       ]);
 
       // Transform market data

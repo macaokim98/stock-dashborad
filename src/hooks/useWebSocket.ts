@@ -53,8 +53,11 @@ export const useWebSocket = () => {
       return;
     }
 
+    // Get WebSocket URL from environment variable or fallback to localhost
+    const WEBSOCKET_URL = process.env.REACT_APP_WEBSOCKET_URL || 'http://localhost:3002';
+    
     // Connect to WebSocket server
-    const socket = io('http://localhost:3002', {
+    const socket = io(WEBSOCKET_URL, {
       transports: ['websocket', 'polling'],
       forceNew: true
     });
