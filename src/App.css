@@ -423,3 +423,171 @@
   color: #64748b;
   font-weight: 500;
 }
+
+/* Dark Mode Styles */
+.app-design3.dark-mode {
+  background: #0f0f23;
+  color: #e2e8f0;
+}
+
+.dark-mode .clean-header {
+  background: #1e1e3f;
+  border-bottom: 1px solid #374151;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .brand h1 {
+  color: #60a5fa;
+}
+
+.dark-mode .tagline {
+  color: #94a3b8;
+}
+
+.dark-mode .nav-btn {
+  color: #94a3b8;
+}
+
+.dark-mode .nav-btn:hover {
+  background: #374151;
+  color: #e2e8f0;
+}
+
+.dark-mode .nav-btn.active {
+  background: #3b82f6;
+  color: white;
+}
+
+.dark-mode .theme-switch {
+  background: #374151;
+  border: 1px solid #4b5563;
+  color: #e2e8f0;
+}
+
+.dark-mode .theme-switch:hover {
+  background: #4b5563;
+}
+
+.dark-mode .stats-bar {
+  background: #1e1e3f;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .stat-value {
+  color: #e2e8f0;
+}
+
+.dark-mode .stat-label {
+  color: #94a3b8;
+}
+
+.dark-mode .card {
+  background: #1e1e3f;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .card-header {
+  border-bottom: 1px solid #374151;
+}
+
+.dark-mode .card-header h3 {
+  color: #e2e8f0;
+}
+
+.dark-mode .time-selector {
+  background: #374151;
+  border: 1px solid #4b5563;
+  color: #e2e8f0;
+}
+
+.dark-mode .view-all {
+  color: #60a5fa;
+}
+
+.dark-mode .view-all:hover {
+  background: #374151;
+}
+
+.dark-mode .index-item {
+  background: #262640;
+}
+
+.dark-mode .index-name {
+  color: #d1d5db;
+}
+
+.dark-mode .index-value {
+  color: #e2e8f0;
+}
+
+.dark-mode .holding-item {
+  background: #262640;
+}
+
+.dark-mode .holding-item:hover {
+  background: #374151;
+}
+
+.dark-mode .holding-symbol {
+  color: #e2e8f0;
+}
+
+.dark-mode .holding-name {
+  color: #94a3b8;
+}
+
+.dark-mode .holding-price {
+  color: #e2e8f0;
+}
+
+.dark-mode .chart-btn {
+  border: 1px solid #4b5563;
+  color: #e2e8f0;
+}
+
+.dark-mode .chart-btn:hover {
+  background: #374151;
+}
+
+.dark-mode .chart-btn.active {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.dark-mode .chart-placeholder {
+  background: #262640;
+}
+
+.dark-mode .chart-line {
+  background: linear-gradient(90deg, #60a5fa, #3b82f6);
+}
+
+.dark-mode .point {
+  background: #60a5fa;
+  border: 2px solid #1e1e3f;
+}
+
+.dark-mode .activity-count {
+  color: #94a3b8;
+}
+
+.dark-mode .activity-item {
+  background: #262640;
+}
+
+.dark-mode .activity-symbol {
+  color: #e2e8f0;
+}
+
+.dark-mode .activity-desc {
+  color: #94a3b8;
+}
+
+.dark-mode .activity-time {
+  color: #94a3b8;
+}

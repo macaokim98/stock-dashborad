@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 const App: React.FC = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('darkMode');
+    if (savedTheme) {
+      setIsDarkMode(JSON.parse(savedTheme));
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = !isDarkMode;
+    setIsDarkMode(newTheme);
+    localStorage.setItem('darkMode', JSON.stringify(newTheme));
+  };
+
   return (
-    <div className="app-design3">
+    <div className={`app-design3 ${isDarkMode ? 'dark-mode' : ''}`}
       <header className="clean-header">
         <div className="brand">
           <h1>StockBase</h1>
@@ -13,7 +28,9 @@ const App: React.FC = () => {
           <button className="nav-btn">Portfolio</button>
           <button className="nav-btn">Analytics</button>
           <button className="nav-btn active">Dashboard</button>
-          <button className="theme-switch">●</button>
+          <button className="theme-switch" onClick={toggleTheme}>
+            {isDarkMode ? '☀️' : '🌙'}
+          </button>
         </nav>
       </header>
       
