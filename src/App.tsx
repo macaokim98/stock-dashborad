@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import { useStockData } from './hooks/useStockData';
+import LoadingSpinner from './components/LoadingSpinner';
 
 const App: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const { stocks, marketIndices, portfolioData, loading, error, refreshData } = useStockData();
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('darkMode');
@@ -18,7 +21,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className={`app-design3 ${isDarkMode ? 'dark-mode' : ''}`}
+    <div className={`app-design3 ${isDarkMode ? 'dark-mode' : ''}`}>
       <header className="clean-header">
         <div className="brand">
           <h1>StockBase</h1>
@@ -35,23 +38,48 @@ const App: React.FC = () => {
       </header>
       
       <main className="clean-main">
-        <div className="stats-bar">
-          <div className="stat-item">
-            <span className="stat-label">Portfolio Value</span>
-            <span className="stat-value">$124,567.89</span>
-            <span className="stat-change positive">+2.4%</span>
+        {loading ? (
+          <div className="stats-bar">
+            <div className="stat-item">
+              <LoadingSpinner size="medium" />
+            </div>
           </div>
-          <div className="stat-item">
-            <span className="stat-label">Day Change</span>
-            <span className="stat-value">+$2,890.45</span>
-            <span className="stat-change positive">+2.4%</span>
+        ) : error ? (
+          <div className="stats-bar">
+            <div className="stat-item error">
+              <span className="error-message">{error}</span>
+              <button onClick={refreshData} className="refresh-btn">Retry</button>
+            </div>
           </div>
-          <div className="stat-item">
-            <span className="stat-label">Total Gain</span>
-            <span className="stat-value">+$24,567.89</span>
-            <span className="stat-change positive">+24.5%</span>
+        ) : (
+          <div className="stats-bar">
+            <div className="stat-item">
+              <span className="stat-label">Portfolio Value</span>
+              <span className="stat-value">${portfolioData?.totalValue.toLocaleString()}</span>
+              <span className={`stat-change ${portfolioData && portfolioData.dayChangePercent >= 0 ? 'positive' : 'negative'}`}>
+                {portfolioData && portfolioData.dayChangePercent >= 0 ? '+' : ''}{portfolioData?.dayChangePercent.toFixed(1)}%
+              </span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-label">Day Change</span>
+              <span className="stat-value">
+                {portfolioData && portfolioData.dayChange >= 0 ? '+' : ''}${portfolioData?.dayChange.toLocaleString()}
+              </span>
+              <span className={`stat-change ${portfolioData && portfolioData.dayChangePercent >= 0 ? 'positive' : 'negative'}`}>
+                {portfolioData && portfolioData.dayChangePercent >= 0 ? '+' : ''}{portfolioData?.dayChangePercent.toFixed(1)}%
+              </span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-label">Total Gain</span>
+              <span className="stat-value">
+                {portfolioData && portfolioData.totalGain >= 0 ? '+' : ''}${portfolioData?.totalGain.toLocaleString()}
+              </span>
+              <span className={`stat-change ${portfolioData && portfolioData.totalGainPercent >= 0 ? 'positive' : 'negative'}`}>
+                {portfolioData && portfolioData.totalGainPercent >= 0 ? '+' : ''}{portfolioData?.totalGainPercent.toFixed(1)}%
+              </span>
+            </div>
           </div>
-        </div>
+        )}
         
         <div className="dashboard-layout">
           <div className="card market-card">
@@ -66,21 +94,15 @@ const App: React.FC = () => {
             </div>
             <div className="card-content">
               <div className="index-grid">
-                <div className="index-item">
-                  <div className="index-name">S&P 500</div>
-                  <div className="index-value">4,856.84</div>
-                  <div className="index-change positive">+1.2%</div>
-                </div>
-                <div className="index-item">
-                  <div className="index-name">NASDAQ</div>
-                  <div className="index-value">15,234.67</div>
-                  <div className="index-change positive">+0.8%</div>
-                </div>
-                <div className="index-item">
-                  <div className="index-name">Dow Jones</div>
-                  <div className="index-value">36,745.31</div>
-                  <div className="index-change negative">-0.3%</div>
-                </div>
+                {marketIndices.map((index) => (
+                  <div key={index.symbol} className="index-item">
+                    <div className="index-name">{index.name}</div>
+                    <div className="index-value">{index.value.toLocaleString()}</div>
+                    <div className={`index-change ${index.changePercent >= 0 ? 'positive' : 'negative'}`}>
+                      {index.changePercent >= 0 ? '+' : ''}{index.changePercent.toFixed(1)}%
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -92,36 +114,20 @@ const App: React.FC = () => {
             </div>
             <div className="card-content">
               <div className="holdings-list">
-                <div className="holding-item">
-                  <div className="holding-info">
-                    <span className="holding-symbol">AAPL</span>
-                    <span className="holding-name">Apple Inc.</span>
+                {stocks.slice(0, 3).map((stock) => (
+                  <div key={stock.symbol} className="holding-item">
+                    <div className="holding-info">
+                      <span className="holding-symbol">{stock.symbol}</span>
+                      <span className="holding-name">{stock.name}</span>
+                    </div>
+                    <div className="holding-data">
+                      <span className="holding-price">${stock.price.toFixed(2)}</span>
+                      <span className={`holding-change ${stock.changePercent >= 0 ? 'positive' : 'negative'}`}>
+                        {stock.changePercent >= 0 ? '+' : ''}{stock.changePercent.toFixed(1)}%
+                      </span>
+                    </div>
                   </div>
-                  <div className="holding-data">
-                    <span className="holding-price">$195.43</span>
-                    <span className="holding-change positive">+2.1%</span>
-                  </div>
-                </div>
-                <div className="holding-item">
-                  <div className="holding-info">
-                    <span className="holding-symbol">MSFT</span>
-                    <span className="holding-name">Microsoft Corp.</span>
-                  </div>
-                  <div className="holding-data">
-                    <span className="holding-price">$421.89</span>
-                    <span className="holding-change positive">+1.8%</span>
-                  </div>
-                </div>
-                <div className="holding-item">
-                  <div className="holding-info">
-                    <span className="holding-symbol">GOOGL</span>
-                    <span className="holding-name">Alphabet Inc.</span>
-                  </div>
-                  <div className="holding-data">
-                    <span className="holding-price">$2,834.56</span>
-                    <span className="holding-change negative">-0.5%</span>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
