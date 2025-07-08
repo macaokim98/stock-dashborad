@@ -1,0 +1,842 @@
+2025-07-08 14:35:01 [info]: 🚀 Backend server running on port 3001
+2025-07-08 14:35:01 [info]: 📊 Stock Dashboard API ready
+2025-07-08 14:35:01 [info]: 🌍 Environment: development
+2025-07-08 14:36:21 [info]: 🚀 Backend server running on port 3001
+2025-07-08 14:36:21 [info]: 📊 Stock Dashboard API ready
+2025-07-08 14:36:21 [info]: 🌍 Environment: development
+2025-07-08 14:37:12 [info]: 🚀 Backend server running on port 3001
+2025-07-08 14:37:12 [info]: 📊 Stock Dashboard API ready
+2025-07-08 14:37:12 [info]: 🌍 Environment: development
+2025-07-08 14:37:17 [info]: Fetching market overview from YFinance
+2025-07-08 14:37:17 [info]: Fetching top gainers
+2025-07-08 14:37:17 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 14:37:17 [info]: ::ffff:127.0.0.1 - - [08/Jul/2025:05:37:17 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:37:17 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 14:37:17 [info]: ::ffff:127.0.0.1 - - [08/Jul/2025:05:37:17 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:37:17 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:37:17 [info]: ::ffff:127.0.0.1 - - [08/Jul/2025:05:37:17 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:37:17 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 14:37:18 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 14:37:18 [info]: Fetching market overview from YFinance
+2025-07-08 14:37:18 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 14:37:18 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:37:18 [info]: ::ffff:127.0.0.1 - - [08/Jul/2025:05:37:18 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:37:18 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 14:37:18 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 14:37:18 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 14:37:18 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 14:37:18 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 14:37:19 [info]: Fetching quote for AMD from YFinance
+2025-07-08 14:37:19 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 14:37:19 [info]: Fetching quote for META from YFinance
+2025-07-08 14:37:19 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 14:37:19 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 14:37:19 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 14:37:20 [info]: Top gainers fetched: 1 stocks
+2025-07-08 14:37:20 [info]: ::ffff:127.0.0.1 - - [08/Jul/2025:05:37:20 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:37:20 [info]: Fetching top gainers
+2025-07-08 14:37:20 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 14:37:20 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 14:37:20 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 14:37:20 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 14:37:20 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 14:37:20 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 14:37:20 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 14:37:20 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 14:37:20 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 14:37:20 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 14:37:20 [info]: Fetching quote for AMD from YFinance
+2025-07-08 14:37:20 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 14:37:20 [info]: Fetching quote for META from YFinance
+2025-07-08 14:37:20 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 14:37:21 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 14:37:21 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 14:37:21 [info]: Top gainers fetched: 1 stocks
+2025-07-08 14:37:21 [info]: ::ffff:127.0.0.1 - - [08/Jul/2025:05:37:21 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:37:27 [info]: Fetching market overview from YFinance
+2025-07-08 14:37:27 [info]: Fetching top gainers
+2025-07-08 14:37:27 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 14:37:27 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 14:37:27 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:37:27 [info]: ::ffff:127.0.0.1 - - [08/Jul/2025:05:37:27 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:37:27 [info]: ::ffff:127.0.0.1 - - [08/Jul/2025:05:37:27 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:37:27 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 14:37:27 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 14:37:27 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 14:37:27 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 14:37:27 [info]: Fetching market overview from YFinance
+2025-07-08 14:37:27 [info]: ::ffff:127.0.0.1 - - [08/Jul/2025:05:37:27 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:37:27 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 14:37:27 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 14:37:27 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:37:27 [info]: ::ffff:127.0.0.1 - - [08/Jul/2025:05:37:27 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:37:28 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 14:37:28 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 14:37:28 [info]: Fetching quote for AMD from YFinance
+2025-07-08 14:37:28 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 14:37:28 [info]: Fetching quote for META from YFinance
+2025-07-08 14:37:28 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 14:37:28 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 14:37:28 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 14:37:28 [info]: Top gainers fetched: 1 stocks
+2025-07-08 14:37:28 [info]: ::ffff:127.0.0.1 - - [08/Jul/2025:05:37:28 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:37:28 [info]: Fetching top gainers
+2025-07-08 14:37:28 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 14:37:28 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 14:37:28 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 14:37:28 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 14:37:28 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 14:37:28 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 14:37:29 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 14:37:29 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 14:37:29 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 14:37:29 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 14:37:29 [info]: Fetching quote for AMD from YFinance
+2025-07-08 14:37:29 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 14:37:29 [info]: Fetching quote for META from YFinance
+2025-07-08 14:37:29 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 14:37:29 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 14:37:29 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 14:37:29 [info]: Top gainers fetched: 1 stocks
+2025-07-08 14:37:29 [info]: ::ffff:127.0.0.1 - - [08/Jul/2025:05:37:29 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:44:40 [info]: 🚀 Backend server running on port 3001
+2025-07-08 14:44:40 [info]: 📊 Stock Dashboard API ready
+2025-07-08 14:44:40 [info]: 🌍 Environment: development
+2025-07-08 14:44:44 [info]: Fetching market overview from YFinance
+2025-07-08 14:44:44 [info]: Fetching top gainers
+2025-07-08 14:44:44 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 14:44:44 [info]: 127.0.0.1 - - [08/Jul/2025:05:44:44 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:44:45 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 14:44:45 [info]: 127.0.0.1 - - [08/Jul/2025:05:44:45 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:44:45 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:44:45 [info]: 127.0.0.1 - - [08/Jul/2025:05:44:45 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:44:45 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 14:44:45 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 14:44:45 [info]: Fetching market overview from YFinance
+2025-07-08 14:44:45 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 14:44:45 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:44:45 [info]: 127.0.0.1 - - [08/Jul/2025:05:44:45 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:44:45 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 14:44:45 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 14:44:45 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 14:44:46 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 14:44:46 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 14:44:46 [info]: Fetching quote for AMD from YFinance
+2025-07-08 14:44:46 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 14:44:46 [info]: Fetching quote for META from YFinance
+2025-07-08 14:44:46 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 14:44:46 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 14:44:47 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 14:44:47 [info]: Top gainers fetched: 1 stocks
+2025-07-08 14:44:47 [info]: 127.0.0.1 - - [08/Jul/2025:05:44:47 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:44:47 [info]: Fetching top gainers
+2025-07-08 14:44:47 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 14:44:47 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 14:44:47 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 14:44:47 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 14:44:47 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 14:44:47 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 14:44:47 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 14:44:47 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 14:44:47 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 14:44:47 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 14:44:48 [info]: Fetching quote for AMD from YFinance
+2025-07-08 14:44:48 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 14:44:48 [info]: Fetching quote for META from YFinance
+2025-07-08 14:44:48 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 14:44:48 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 14:44:48 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 14:44:48 [info]: Top gainers fetched: 1 stocks
+2025-07-08 14:44:48 [info]: 127.0.0.1 - - [08/Jul/2025:05:44:48 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:45:02 [info]: Fetching market overview from YFinance
+2025-07-08 14:45:02 [info]: Fetching top gainers
+2025-07-08 14:45:02 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 14:45:02 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 14:45:02 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:45:02 [info]: 127.0.0.1 - - [08/Jul/2025:05:45:02 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:45:02 [info]: 127.0.0.1 - - [08/Jul/2025:05:45:02 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:45:02 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 14:45:02 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 14:45:03 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 14:45:03 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 14:45:03 [info]: Fetching market overview from YFinance
+2025-07-08 14:45:03 [info]: 127.0.0.1 - - [08/Jul/2025:05:45:03 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:45:03 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 14:45:03 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 14:45:03 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:45:03 [info]: 127.0.0.1 - - [08/Jul/2025:05:45:03 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:45:03 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 14:45:03 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 14:45:03 [info]: Fetching quote for AMD from YFinance
+2025-07-08 14:45:03 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 14:45:03 [info]: Fetching quote for META from YFinance
+2025-07-08 14:45:03 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 14:52:35 [info]: 🚀 Backend server running on port 3001
+2025-07-08 14:52:35 [info]: 📊 Stock Dashboard API ready
+2025-07-08 14:52:35 [info]: 🌍 Environment: development
+2025-07-08 14:52:43 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 14:52:43 [info]: Fetching market overview from YFinance
+2025-07-08 14:52:43 [info]: Fetching top gainers
+2025-07-08 14:52:43 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 14:52:43 [info]: 127.0.0.1 - - [08/Jul/2025:05:52:43 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:52:43 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 14:52:43 [info]: 127.0.0.1 - - [08/Jul/2025:05:52:43 +0000] "GET /api/stocks/chart/AAPL?period=1d&interval=5m HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:52:43 [info]: 127.0.0.1 - - [08/Jul/2025:05:52:43 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:52:43 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 14:52:43 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:52:43 [info]: 127.0.0.1 - - [08/Jul/2025:05:52:43 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:52:43 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 14:52:44 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 14:52:44 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 14:52:44 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 14:52:44 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 14:52:44 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 14:52:44 [info]: Fetching market overview from YFinance
+2025-07-08 14:52:44 [info]: 127.0.0.1 - - [08/Jul/2025:05:52:44 +0000] "GET /api/stocks/chart/AAPL?period=1d&interval=5m HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:52:44 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 14:52:44 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:52:44 [info]: 127.0.0.1 - - [08/Jul/2025:05:52:44 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:52:44 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 14:52:44 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 14:52:44 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 14:52:45 [info]: Fetching quote for AMD from YFinance
+2025-07-08 14:52:45 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 14:52:45 [info]: Fetching quote for META from YFinance
+2025-07-08 14:52:45 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 14:52:45 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 14:52:45 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 14:52:45 [info]: Top gainers fetched: 1 stocks
+2025-07-08 14:52:45 [info]: 127.0.0.1 - - [08/Jul/2025:05:52:45 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:52:46 [info]: Fetching top gainers
+2025-07-08 14:52:46 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 14:52:46 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 14:52:46 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 14:52:46 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 14:52:46 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 14:52:46 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 14:52:46 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 14:52:46 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 14:52:46 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 14:52:46 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 14:52:46 [info]: Fetching quote for AMD from YFinance
+2025-07-08 14:52:46 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 14:52:46 [info]: Fetching quote for META from YFinance
+2025-07-08 14:52:46 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 14:52:47 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 14:52:47 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 14:52:47 [info]: Top gainers fetched: 1 stocks
+2025-07-08 14:52:47 [info]: 127.0.0.1 - - [08/Jul/2025:05:52:47 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:54:07 [info]: 🚀 Backend server running on port 3001
+2025-07-08 14:54:07 [info]: 📊 Stock Dashboard API ready
+2025-07-08 14:54:07 [info]: 🌍 Environment: development
+2025-07-08 14:54:11 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 14:54:11 [info]: Fetching market overview from YFinance
+2025-07-08 14:54:11 [info]: Fetching top gainers
+2025-07-08 14:54:11 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 14:54:11 [info]: 127.0.0.1 - - [08/Jul/2025:05:54:11 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:54:11 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 14:54:11 [info]: 127.0.0.1 - - [08/Jul/2025:05:54:11 +0000] "GET /api/stocks/chart/AAPL?period=1d&interval=5m HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:54:11 [info]: 127.0.0.1 - - [08/Jul/2025:05:54:11 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:54:11 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 14:54:11 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:54:11 [info]: 127.0.0.1 - - [08/Jul/2025:05:54:11 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:54:11 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 14:54:11 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 14:54:11 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 14:54:12 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 14:54:12 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 14:54:12 [info]: 127.0.0.1 - - [08/Jul/2025:05:54:12 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:54:12 [info]: 127.0.0.1 - - [08/Jul/2025:05:54:12 +0000] "GET /api/stocks/chart/AAPL?period=1d&interval=5m HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:54:12 [info]: Fetching market overview from YFinance
+2025-07-08 14:54:12 [info]: 127.0.0.1 - - [08/Jul/2025:05:54:12 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:54:12 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 14:54:12 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 14:54:12 [info]: 127.0.0.1 - - [08/Jul/2025:05:54:12 +0000] "GET /api/stocks/chart/AAPL?period=1d&interval=5m HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:54:12 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 14:54:12 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:54:12 [info]: 127.0.0.1 - - [08/Jul/2025:05:54:12 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:54:12 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 14:54:12 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 14:54:12 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 14:54:12 [info]: 127.0.0.1 - - [08/Jul/2025:05:54:12 +0000] "GET /api/stocks/chart/AAPL?period=1d&interval=5m HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:54:12 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 14:54:12 [info]: Fetching market overview from YFinance
+2025-07-08 14:54:12 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 14:54:12 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:54:12 [info]: 127.0.0.1 - - [08/Jul/2025:05:54:12 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:54:12 [info]: Fetching market overview from YFinance
+2025-07-08 14:54:12 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:54:12 [info]: 127.0.0.1 - - [08/Jul/2025:05:54:12 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:54:12 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 14:54:12 [info]: Fetching quote for AMD from YFinance
+2025-07-08 14:54:13 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 14:54:13 [info]: Fetching quote for META from YFinance
+2025-07-08 14:54:13 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 14:54:13 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 14:54:13 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 14:54:13 [info]: Top gainers fetched: 1 stocks
+2025-07-08 14:54:13 [info]: 127.0.0.1 - - [08/Jul/2025:05:54:13 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:54:14 [info]: Fetching top gainers
+2025-07-08 14:54:14 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 14:54:14 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 14:54:14 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 14:54:14 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 14:54:14 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 14:54:14 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 14:54:14 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 14:54:14 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 14:54:14 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 14:54:14 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 14:54:14 [info]: Fetching quote for AMD from YFinance
+2025-07-08 14:54:14 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 14:54:14 [info]: Fetching quote for META from YFinance
+2025-07-08 14:54:14 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 14:54:15 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 14:54:15 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 14:54:15 [info]: Top gainers fetched: 1 stocks
+2025-07-08 14:54:15 [info]: 127.0.0.1 - - [08/Jul/2025:05:54:15 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:54:15 [info]: Fetching top gainers
+2025-07-08 14:54:15 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 14:54:15 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 14:54:15 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 14:54:15 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 14:54:15 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 14:54:15 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 14:54:15 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 14:54:15 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 14:54:15 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 14:54:15 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 14:54:15 [info]: Fetching quote for AMD from YFinance
+2025-07-08 14:54:15 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 14:54:16 [info]: Fetching quote for META from YFinance
+2025-07-08 14:54:16 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 14:54:16 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 14:54:16 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 14:54:16 [info]: Top gainers fetched: 1 stocks
+2025-07-08 14:54:16 [info]: 127.0.0.1 - - [08/Jul/2025:05:54:16 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:54:16 [info]: Fetching top gainers
+2025-07-08 14:54:16 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 14:54:16 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 14:54:16 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 14:54:16 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 14:54:17 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 14:54:17 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 14:54:17 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 14:54:17 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 14:54:17 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 14:54:17 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 14:54:17 [info]: Fetching quote for AMD from YFinance
+2025-07-08 14:54:17 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 14:54:17 [info]: Fetching quote for META from YFinance
+2025-07-08 14:54:17 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 14:54:17 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 14:54:17 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 14:54:17 [info]: Top gainers fetched: 1 stocks
+2025-07-08 14:54:17 [info]: 127.0.0.1 - - [08/Jul/2025:05:54:17 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:56:50 [info]: 🚀 Backend server running on port 3001
+2025-07-08 14:56:50 [info]: 📊 Stock Dashboard API ready
+2025-07-08 14:56:50 [info]: 🌍 Environment: development
+2025-07-08 14:56:55 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 14:56:55 [info]: Fetching market overview from YFinance
+2025-07-08 14:56:55 [info]: Fetching top gainers
+2025-07-08 14:56:55 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 14:56:55 [info]: 127.0.0.1 - - [08/Jul/2025:05:56:55 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:56:55 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 14:56:55 [info]: 127.0.0.1 - - [08/Jul/2025:05:56:55 +0000] "GET /api/stocks/chart/AAPL?period=1d&interval=5m HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:56:55 [info]: 127.0.0.1 - - [08/Jul/2025:05:56:55 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:56:56 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 14:56:56 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 14:56:56 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 14:56:56 [info]: 127.0.0.1 - - [08/Jul/2025:05:56:56 +0000] "GET /api/stocks/chart/AAPL?period=1d&interval=5m HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:56:56 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:56:56 [info]: 127.0.0.1 - - [08/Jul/2025:05:56:56 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:56:56 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 14:56:56 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 14:56:56 [info]: Fetching market overview from YFinance
+2025-07-08 14:56:56 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 14:56:56 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:56:56 [info]: 127.0.0.1 - - [08/Jul/2025:05:56:56 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:56:56 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 14:56:56 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 14:56:56 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 14:56:57 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 14:56:57 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 14:56:57 [info]: Fetching quote for AMD from YFinance
+2025-07-08 14:56:57 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 14:56:57 [info]: Fetching quote for META from YFinance
+2025-07-08 14:56:57 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 14:56:58 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 14:56:58 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 14:56:58 [info]: Top gainers fetched: 1 stocks
+2025-07-08 14:56:58 [info]: 127.0.0.1 - - [08/Jul/2025:05:56:58 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:56:58 [info]: Fetching top gainers
+2025-07-08 14:56:58 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 14:56:58 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 14:56:58 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 14:56:58 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 14:56:58 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 14:56:58 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 14:56:58 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 14:56:58 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 14:56:58 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 14:56:58 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 14:56:59 [info]: Fetching quote for AMD from YFinance
+2025-07-08 14:56:59 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 14:56:59 [info]: Fetching quote for META from YFinance
+2025-07-08 14:56:59 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 14:56:59 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 14:56:59 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 14:58:31 [info]: 🚀 Backend server running on port 3001
+2025-07-08 14:58:31 [info]: 📊 Stock Dashboard API ready
+2025-07-08 14:58:31 [info]: 🌍 Environment: development
+2025-07-08 14:58:36 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 14:58:36 [info]: Fetching market overview from YFinance
+2025-07-08 14:58:36 [info]: Fetching top gainers
+2025-07-08 14:58:36 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 14:58:36 [info]: 127.0.0.1 - - [08/Jul/2025:05:58:36 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:58:36 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 14:58:36 [info]: 127.0.0.1 - - [08/Jul/2025:05:58:36 +0000] "GET /api/stocks/chart/AAPL?period=1d&interval=5m HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:58:36 [info]: 127.0.0.1 - - [08/Jul/2025:05:58:36 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:58:36 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 14:58:36 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 14:58:36 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 14:58:36 [info]: 127.0.0.1 - - [08/Jul/2025:05:58:36 +0000] "GET /api/stocks/chart/AAPL?period=1d&interval=5m HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:58:36 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 14:58:37 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:58:37 [info]: 127.0.0.1 - - [08/Jul/2025:05:58:37 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:58:37 [info]: Fetching market overview from YFinance
+2025-07-08 14:58:37 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 14:58:37 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 14:58:37 [info]: 127.0.0.1 - - [08/Jul/2025:05:58:37 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:58:37 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 14:58:37 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 14:58:37 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 14:58:37 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 14:58:37 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 14:58:38 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 14:58:38 [info]: Fetching quote for AMD from YFinance
+2025-07-08 14:58:38 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 14:58:38 [info]: Fetching quote for META from YFinance
+2025-07-08 14:58:38 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 14:58:38 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 14:58:39 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 14:58:39 [info]: Top gainers fetched: 1 stocks
+2025-07-08 14:58:39 [info]: 127.0.0.1 - - [08/Jul/2025:05:58:39 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:58:39 [info]: Fetching top gainers
+2025-07-08 14:58:39 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 14:58:39 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 14:58:39 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 14:58:39 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 14:58:39 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 14:58:39 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 14:58:40 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 14:58:40 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 14:58:40 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 14:58:40 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 14:58:40 [info]: Fetching quote for AMD from YFinance
+2025-07-08 14:58:40 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 14:58:40 [info]: Fetching quote for META from YFinance
+2025-07-08 14:58:40 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 14:58:40 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 14:58:40 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 14:58:40 [info]: Top gainers fetched: 1 stocks
+2025-07-08 14:58:40 [info]: 127.0.0.1 - - [08/Jul/2025:05:58:40 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:58:44 [info]: Fetching chart data for MSFT, period: 1d, interval: 5m
+2025-07-08 14:58:44 [info]: Successfully fetched chart data for MSFT: 79 points
+2025-07-08 14:58:44 [info]: 127.0.0.1 - - [08/Jul/2025:05:58:44 +0000] "GET /api/stocks/chart/MSFT?period=1d&interval=5m HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 14:58:47 [info]: Fetching chart data for GOOGL, period: 1d, interval: 5m
+2025-07-08 14:58:47 [info]: Successfully fetched chart data for GOOGL: 79 points
+2025-07-08 14:58:47 [info]: 127.0.0.1 - - [08/Jul/2025:05:58:47 +0000] "GET /api/stocks/chart/GOOGL?period=1d&interval=5m HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:03:39 [info]: 🚀 Backend server running on port 3001
+2025-07-08 15:03:39 [info]: 📊 Stock Dashboard API ready
+2025-07-08 15:03:39 [info]: 🌍 Environment: development
+2025-07-08 15:03:51 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 15:03:51 [info]: Fetching market overview from YFinance
+2025-07-08 15:03:51 [info]: Fetching top gainers
+2025-07-08 15:03:51 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 15:03:51 [info]: 127.0.0.1 - - [08/Jul/2025:06:03:51 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:03:51 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 15:03:51 [info]: 127.0.0.1 - - [08/Jul/2025:06:03:51 +0000] "GET /api/stocks/chart/AAPL?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:03:52 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 15:03:52 [info]: 127.0.0.1 - - [08/Jul/2025:06:03:52 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:03:52 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 15:03:52 [info]: 127.0.0.1 - - [08/Jul/2025:06:03:52 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:03:52 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 15:03:52 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 15:03:52 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 15:03:52 [info]: 127.0.0.1 - - [08/Jul/2025:06:03:52 +0000] "GET /api/stocks/chart/AAPL?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:03:52 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 15:03:52 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 15:03:52 [info]: Fetching market overview from YFinance
+2025-07-08 15:03:52 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 15:03:52 [info]: 127.0.0.1 - - [08/Jul/2025:06:03:52 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:03:52 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 15:03:52 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 15:03:52 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 15:03:53 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 15:03:53 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 15:03:53 [info]: Fetching quote for AMD from YFinance
+2025-07-08 15:08:13 [info]: 🚀 Backend server running on port 3001
+2025-07-08 15:08:13 [info]: 📊 Stock Dashboard API ready
+2025-07-08 15:08:13 [info]: 🌍 Environment: development
+2025-07-08 15:08:23 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 15:08:23 [info]: Fetching market overview from YFinance
+2025-07-08 15:08:23 [info]: Fetching top gainers
+2025-07-08 15:08:23 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 15:08:23 [info]: 127.0.0.1 - - [08/Jul/2025:06:08:23 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:08:23 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 15:08:23 [info]: 127.0.0.1 - - [08/Jul/2025:06:08:23 +0000] "GET /api/stocks/chart/AAPL?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:08:24 [info]: 127.0.0.1 - - [08/Jul/2025:06:08:24 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:08:24 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 15:08:24 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 15:08:24 [info]: 127.0.0.1 - - [08/Jul/2025:06:08:24 +0000] "GET /api/stocks/chart/AAPL?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:08:24 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 15:08:24 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 15:08:24 [info]: 127.0.0.1 - - [08/Jul/2025:06:08:24 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:08:24 [info]: Fetching market overview from YFinance
+2025-07-08 15:08:24 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 15:08:24 [info]: 127.0.0.1 - - [08/Jul/2025:06:08:24 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:08:24 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 15:08:24 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 15:08:24 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 15:08:24 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 15:08:25 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 15:08:25 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 15:08:25 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 15:08:25 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 15:08:25 [info]: Fetching quote for AMD from YFinance
+2025-07-08 15:08:25 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 15:08:25 [info]: Fetching quote for META from YFinance
+2025-07-08 15:08:26 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 15:08:26 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 15:08:26 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 15:08:26 [info]: Top gainers fetched: 1 stocks
+2025-07-08 15:08:26 [info]: 127.0.0.1 - - [08/Jul/2025:06:08:26 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:08:26 [info]: Fetching top gainers
+2025-07-08 15:08:26 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 15:08:26 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 15:08:26 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 15:08:26 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 15:08:26 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 15:08:26 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 15:08:26 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 15:08:26 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 15:08:27 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 15:08:27 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 15:08:27 [info]: Fetching quote for AMD from YFinance
+2025-07-08 15:08:27 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 15:08:27 [info]: Fetching quote for META from YFinance
+2025-07-08 15:08:27 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 15:08:27 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 15:08:27 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 15:08:27 [info]: Top gainers fetched: 1 stocks
+2025-07-08 15:08:27 [info]: 127.0.0.1 - - [08/Jul/2025:06:08:27 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:10:35 [info]: 🚀 Backend server running on port 3001
+2025-07-08 15:10:35 [info]: 📊 Stock Dashboard API ready
+2025-07-08 15:10:35 [info]: 🌍 Environment: development
+2025-07-08 15:10:40 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 15:10:40 [info]: Fetching market overview from YFinance
+2025-07-08 15:10:40 [info]: Fetching top gainers
+2025-07-08 15:10:40 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 15:10:40 [info]: 127.0.0.1 - - [08/Jul/2025:06:10:40 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:10:40 [info]: 127.0.0.1 - - [08/Jul/2025:06:10:40 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:10:40 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 15:10:40 [info]: 127.0.0.1 - - [08/Jul/2025:06:10:40 +0000] "GET /api/stocks/chart/AAPL?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:10:40 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 15:10:40 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 15:10:40 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 15:10:40 [info]: 127.0.0.1 - - [08/Jul/2025:06:10:40 +0000] "GET /api/stocks/chart/AAPL?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:10:40 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 15:10:40 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 15:10:40 [info]: 127.0.0.1 - - [08/Jul/2025:06:10:40 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:10:40 [info]: Fetching market overview from YFinance
+2025-07-08 15:10:41 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 15:10:41 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 15:10:41 [info]: 127.0.0.1 - - [08/Jul/2025:06:10:41 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:10:41 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 15:10:41 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 15:10:41 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 15:10:41 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 15:10:41 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 15:10:41 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 15:10:42 [info]: Fetching quote for AMD from YFinance
+2025-07-08 15:10:42 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 15:10:42 [info]: Fetching quote for META from YFinance
+2025-07-08 15:10:42 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 15:10:42 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 15:10:42 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 15:10:42 [info]: Top gainers fetched: 1 stocks
+2025-07-08 15:10:42 [info]: 127.0.0.1 - - [08/Jul/2025:06:10:42 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:10:42 [info]: Fetching top gainers
+2025-07-08 15:10:42 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 15:10:42 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 15:10:43 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 15:10:43 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 15:10:43 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 15:10:43 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 15:10:43 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 15:10:43 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 15:10:43 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 15:10:43 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 15:10:43 [info]: Fetching quote for AMD from YFinance
+2025-07-08 15:10:43 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 15:10:43 [info]: Fetching quote for META from YFinance
+2025-07-08 15:10:43 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 15:10:44 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 15:10:44 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 15:10:44 [info]: Top gainers fetched: 1 stocks
+2025-07-08 15:10:44 [info]: 127.0.0.1 - - [08/Jul/2025:06:10:44 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:13:15 [info]: 🚀 Backend server running on port 3001
+2025-07-08 15:13:15 [info]: 📊 Stock Dashboard API ready
+2025-07-08 15:13:15 [info]: 🌍 Environment: development
+2025-07-08 15:16:18 [info]: 🚀 Backend server running on port 3001
+2025-07-08 15:16:18 [info]: 📊 Stock Dashboard API ready
+2025-07-08 15:16:18 [info]: 🌍 Environment: development
+2025-07-08 15:16:23 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 15:16:23 [info]: Fetching market overview from YFinance
+2025-07-08 15:16:23 [info]: Fetching top gainers
+2025-07-08 15:16:23 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 15:16:23 [info]: 127.0.0.1 - - [08/Jul/2025:06:16:23 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:16:23 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 15:16:23 [info]: 127.0.0.1 - - [08/Jul/2025:06:16:23 +0000] "GET /api/stocks/chart/AAPL?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:16:24 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 15:16:24 [info]: 127.0.0.1 - - [08/Jul/2025:06:16:24 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:16:24 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 15:16:24 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 15:16:24 [info]: 127.0.0.1 - - [08/Jul/2025:06:16:24 +0000] "GET /api/stocks/chart/AAPL?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:16:24 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 15:16:24 [info]: 127.0.0.1 - - [08/Jul/2025:06:16:24 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:16:24 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 15:16:24 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 15:16:24 [info]: Fetching market overview from YFinance
+2025-07-08 15:16:24 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 15:16:24 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 15:16:24 [info]: 127.0.0.1 - - [08/Jul/2025:06:16:24 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:16:24 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 15:16:24 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 15:16:25 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 15:16:25 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 15:16:25 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 15:16:25 [info]: Fetching quote for AMD from YFinance
+2025-07-08 15:16:25 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 15:16:25 [info]: Fetching quote for META from YFinance
+2025-07-08 15:16:26 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 15:16:26 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 15:16:26 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 15:16:26 [info]: Top gainers fetched: 1 stocks
+2025-07-08 15:16:26 [info]: 127.0.0.1 - - [08/Jul/2025:06:16:26 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:16:26 [info]: Fetching top gainers
+2025-07-08 15:16:26 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 15:16:26 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 15:16:26 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 15:16:26 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 15:16:26 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 15:16:26 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 15:16:26 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 15:16:26 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 15:16:27 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 15:16:27 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 15:16:27 [info]: Fetching quote for AMD from YFinance
+2025-07-08 15:16:27 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 15:16:27 [info]: Fetching quote for META from YFinance
+2025-07-08 15:16:27 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 15:16:27 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 15:16:27 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 15:16:27 [info]: Top gainers fetched: 1 stocks
+2025-07-08 15:16:27 [info]: 127.0.0.1 - - [08/Jul/2025:06:16:27 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:16:34 [info]: Fetching chart data for MSFT, period: 1d, interval: 5m
+2025-07-08 15:16:34 [info]: Successfully fetched chart data for MSFT: 79 points
+2025-07-08 15:16:34 [info]: 127.0.0.1 - - [08/Jul/2025:06:16:34 +0000] "GET /api/stocks/chart/MSFT?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:16:38 [info]: Fetching chart data for TSLA, period: 1d, interval: 5m
+2025-07-08 15:16:38 [info]: Successfully fetched chart data for TSLA: 79 points
+2025-07-08 15:16:38 [info]: 127.0.0.1 - - [08/Jul/2025:06:16:38 +0000] "GET /api/stocks/chart/TSLA?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:17:04 [info]: Fetching chart data for TSLA, period: 5d, interval: 5m
+2025-07-08 15:17:04 [info]: Successfully fetched chart data for TSLA: 122 points
+2025-07-08 15:17:04 [info]: 127.0.0.1 - - [08/Jul/2025:06:17:04 +0000] "GET /api/stocks/chart/TSLA?interval=5m&period=5d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:17:05 [info]: Fetching chart data for TSLA, period: 1mo, interval: 5m
+2025-07-08 15:17:06 [info]: Successfully fetched chart data for TSLA: 1448 points
+2025-07-08 15:17:06 [info]: 127.0.0.1 - - [08/Jul/2025:06:17:06 +0000] "GET /api/stocks/chart/TSLA?interval=5m&period=1mo HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:18:35 [info]: 🚀 Backend server running on port 3001
+2025-07-08 15:18:35 [info]: 📊 Stock Dashboard API ready
+2025-07-08 15:18:35 [info]: 🌍 Environment: development
+2025-07-08 15:18:39 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 15:18:39 [info]: Fetching market overview from YFinance
+2025-07-08 15:18:39 [info]: Fetching top gainers
+2025-07-08 15:18:39 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 15:18:40 [info]: 127.0.0.1 - - [08/Jul/2025:06:18:40 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:18:40 [info]: 127.0.0.1 - - [08/Jul/2025:06:18:40 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:18:40 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 15:18:40 [info]: 127.0.0.1 - - [08/Jul/2025:06:18:40 +0000] "GET /api/stocks/chart/AAPL?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:18:40 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 15:18:40 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 15:18:40 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 15:18:40 [info]: 127.0.0.1 - - [08/Jul/2025:06:18:40 +0000] "GET /api/stocks/chart/AAPL?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:18:40 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 15:18:40 [info]: 127.0.0.1 - - [08/Jul/2025:06:18:40 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:18:40 [info]: Fetching market overview from YFinance
+2025-07-08 15:18:40 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 15:18:40 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 15:18:40 [info]: 127.0.0.1 - - [08/Jul/2025:06:18:40 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:18:40 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 15:18:40 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 15:18:41 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 15:18:41 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 15:18:41 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 15:18:41 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 15:18:41 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 15:18:41 [info]: Fetching quote for AMD from YFinance
+2025-07-08 15:18:41 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 15:18:42 [info]: Fetching quote for META from YFinance
+2025-07-08 15:18:42 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 15:18:42 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 15:18:42 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 15:18:42 [info]: Top gainers fetched: 1 stocks
+2025-07-08 15:18:42 [info]: 127.0.0.1 - - [08/Jul/2025:06:18:42 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:18:42 [info]: Fetching top gainers
+2025-07-08 15:18:42 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 15:18:42 [info]: Successfully fetched quote for AAPL: $209.95
+2025-07-08 15:18:42 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 15:18:42 [info]: Successfully fetched quote for MSFT: $497.72
+2025-07-08 15:18:43 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 15:18:43 [info]: Successfully fetched quote for GOOGL: $176.79
+2025-07-08 15:18:43 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 15:18:43 [info]: Successfully fetched quote for TSLA: $293.94
+2025-07-08 15:18:43 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 15:18:43 [info]: Successfully fetched quote for NVDA: $158.24
+2025-07-08 15:18:43 [info]: Fetching quote for AMD from YFinance
+2025-07-08 15:18:43 [info]: Successfully fetched quote for AMD: $134.8
+2025-07-08 15:18:43 [info]: Fetching quote for META from YFinance
+2025-07-08 15:18:43 [info]: Successfully fetched quote for META: $718.35
+2025-07-08 15:18:43 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 15:18:43 [info]: Successfully fetched quote for AMZN: $223.47
+2025-07-08 15:18:43 [info]: Top gainers fetched: 1 stocks
+2025-07-08 15:18:43 [info]: 127.0.0.1 - - [08/Jul/2025:06:18:43 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:22:57 [warn]: AlphaVantage API key not found in environment variables
+2025-07-08 15:22:57 [warn]: AlphaVantage API key not found in environment variables
+2025-07-08 15:22:57 [info]: 🚀 Backend server running on port 3001
+2025-07-08 15:22:57 [info]: 📊 Stock Dashboard API ready
+2025-07-08 15:22:57 [info]: 🌍 Environment: development
+2025-07-08 15:23:01 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 15:23:01 [info]: Fetching market overview from YFinance
+2025-07-08 15:23:01 [info]: Fetching top gainers
+2025-07-08 15:23:01 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 15:23:01 [info]: 127.0.0.1 - - [08/Jul/2025:06:23:01 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:23:01 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 15:23:01 [info]: 127.0.0.1 - - [08/Jul/2025:06:23:01 +0000] "GET /api/stocks/chart/AAPL?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:23:01 [info]: Successfully fetched quote from YFinance for AAPL: $209.95
+2025-07-08 15:23:01 [info]: 127.0.0.1 - - [08/Jul/2025:06:23:01 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:23:01 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 15:23:01 [info]: 127.0.0.1 - - [08/Jul/2025:06:23:01 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:23:01 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 15:23:01 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 15:23:01 [info]: 127.0.0.1 - - [08/Jul/2025:06:23:01 +0000] "GET /api/stocks/chart/AAPL?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:23:01 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 15:23:02 [info]: Successfully fetched quote from YFinance for MSFT: $497.72
+2025-07-08 15:23:02 [info]: Fetching market overview from YFinance
+2025-07-08 15:23:02 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 15:23:02 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 15:23:02 [info]: 127.0.0.1 - - [08/Jul/2025:06:23:02 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:23:02 [info]: Successfully fetched quote from YFinance for GOOGL: $176.79
+2025-07-08 15:23:02 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 15:23:02 [info]: Successfully fetched quote from YFinance for TSLA: $293.94
+2025-07-08 15:23:02 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 15:23:03 [info]: Successfully fetched quote from YFinance for NVDA: $158.24
+2025-07-08 15:23:03 [info]: Fetching quote for AMD from YFinance
+2025-07-08 15:23:03 [info]: Successfully fetched quote from YFinance for AMD: $134.8
+2025-07-08 15:23:03 [info]: Fetching quote for META from YFinance
+2025-07-08 15:23:03 [info]: Successfully fetched quote from YFinance for META: $718.35
+2025-07-08 15:23:03 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 15:23:03 [info]: Successfully fetched quote from YFinance for AMZN: $223.47
+2025-07-08 15:23:04 [info]: Top gainers fetched: 1 stocks
+2025-07-08 15:23:04 [info]: 127.0.0.1 - - [08/Jul/2025:06:23:04 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:23:04 [info]: Fetching top gainers
+2025-07-08 15:23:04 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 15:23:04 [info]: Successfully fetched quote from YFinance for AAPL: $209.95
+2025-07-08 15:23:04 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 15:23:04 [info]: Successfully fetched quote from YFinance for MSFT: $497.72
+2025-07-08 15:23:04 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 15:23:04 [info]: Successfully fetched quote from YFinance for GOOGL: $176.79
+2025-07-08 15:23:04 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 15:23:04 [info]: Successfully fetched quote from YFinance for TSLA: $293.94
+2025-07-08 15:23:04 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 15:23:04 [info]: Successfully fetched quote from YFinance for NVDA: $158.24
+2025-07-08 15:23:04 [info]: Fetching quote for AMD from YFinance
+2025-07-08 15:23:04 [info]: Successfully fetched quote from YFinance for AMD: $134.8
+2025-07-08 15:23:04 [info]: Fetching quote for META from YFinance
+2025-07-08 15:23:04 [info]: Successfully fetched quote from YFinance for META: $718.35
+2025-07-08 15:23:05 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 15:23:05 [info]: Successfully fetched quote from YFinance for AMZN: $223.47
+2025-07-08 15:23:05 [info]: Top gainers fetched: 1 stocks
+2025-07-08 15:23:05 [info]: 127.0.0.1 - - [08/Jul/2025:06:23:05 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:23:14 [info]: Fetching chart data for MSFT, period: 1d, interval: 5m
+2025-07-08 15:23:15 [info]: Successfully fetched chart data for MSFT: 79 points
+2025-07-08 15:23:15 [info]: 127.0.0.1 - - [08/Jul/2025:06:23:15 +0000] "GET /api/stocks/chart/MSFT?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 15:23:19 [info]: Fetching chart data for GOOGL, period: 1d, interval: 5m
+2025-07-08 15:23:19 [info]: Successfully fetched chart data for GOOGL: 79 points
+2025-07-08 15:23:19 [info]: 127.0.0.1 - - [08/Jul/2025:06:23:19 +0000] "GET /api/stocks/chart/GOOGL?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 16:16:56 [warn]: AlphaVantage API key not found in environment variables
+2025-07-08 16:16:56 [warn]: AlphaVantage API key not found in environment variables
+2025-07-08 16:16:56 [info]: 🚀 Backend server running on port 3001
+2025-07-08 16:16:56 [info]: 📊 Stock Dashboard API ready
+2025-07-08 16:16:56 [info]: 🌍 Environment: development
+2025-07-08 16:17:04 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 16:17:04 [info]: Fetching market overview from YFinance
+2025-07-08 16:17:04 [info]: Fetching top gainers
+2025-07-08 16:17:04 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 16:17:04 [info]: 127.0.0.1 - - [08/Jul/2025:07:17:04 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 16:17:04 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 16:17:04 [info]: 127.0.0.1 - - [08/Jul/2025:07:17:04 +0000] "GET /api/stocks/chart/AAPL?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 16:17:04 [info]: Successfully fetched quote from YFinance for AAPL: $209.95
+2025-07-08 16:17:04 [info]: 127.0.0.1 - - [08/Jul/2025:07:17:04 +0000] "GET /api/portfolio/overview HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 16:17:04 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 16:17:04 [info]: 127.0.0.1 - - [08/Jul/2025:07:17:04 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 16:17:05 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 16:17:05 [info]: Fetching chart data for AAPL, period: 1d, interval: 5m
+2025-07-08 16:17:05 [info]: Successfully fetched chart data for AAPL: 79 points
+2025-07-08 16:17:05 [info]: 127.0.0.1 - - [08/Jul/2025:07:17:05 +0000] "GET /api/stocks/chart/AAPL?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 16:17:05 [info]: Successfully fetched quote from YFinance for MSFT: $497.72
+2025-07-08 16:17:05 [info]: Fetching market overview from YFinance
+2025-07-08 16:17:05 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 16:17:05 [info]: Successfully fetched market overview: 3 indices
+2025-07-08 16:17:05 [info]: 127.0.0.1 - - [08/Jul/2025:07:17:05 +0000] "GET /api/stocks/market-overview HTTP/1.1" 200 335 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 16:17:05 [info]: Successfully fetched quote from YFinance for GOOGL: $176.79
+2025-07-08 16:17:05 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 16:17:05 [info]: Successfully fetched quote from YFinance for TSLA: $293.94
+2025-07-08 16:17:05 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 16:17:06 [info]: Successfully fetched quote from YFinance for NVDA: $158.24
+2025-07-08 16:17:06 [info]: Fetching quote for AMD from YFinance
+2025-07-08 16:17:06 [info]: Successfully fetched quote from YFinance for AMD: $134.8
+2025-07-08 16:17:06 [info]: Fetching quote for META from YFinance
+2025-07-08 16:17:06 [info]: Successfully fetched quote from YFinance for META: $718.35
+2025-07-08 16:17:06 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 16:17:07 [info]: Successfully fetched quote from YFinance for AMZN: $223.47
+2025-07-08 16:17:07 [info]: Top gainers fetched: 1 stocks
+2025-07-08 16:17:07 [info]: 127.0.0.1 - - [08/Jul/2025:07:17:07 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 16:17:07 [info]: Fetching top gainers
+2025-07-08 16:17:07 [info]: Fetching quote for AAPL from YFinance
+2025-07-08 16:17:07 [info]: Successfully fetched quote from YFinance for AAPL: $209.95
+2025-07-08 16:17:07 [info]: Fetching quote for MSFT from YFinance
+2025-07-08 16:17:07 [info]: Successfully fetched quote from YFinance for MSFT: $497.72
+2025-07-08 16:17:07 [info]: Fetching quote for GOOGL from YFinance
+2025-07-08 16:17:07 [info]: Successfully fetched quote from YFinance for GOOGL: $176.79
+2025-07-08 16:17:07 [info]: Fetching quote for TSLA from YFinance
+2025-07-08 16:17:07 [info]: Successfully fetched quote from YFinance for TSLA: $293.94
+2025-07-08 16:17:07 [info]: Fetching quote for NVDA from YFinance
+2025-07-08 16:17:07 [info]: Successfully fetched quote from YFinance for NVDA: $158.24
+2025-07-08 16:17:08 [info]: Fetching quote for AMD from YFinance
+2025-07-08 16:17:08 [info]: Successfully fetched quote from YFinance for AMD: $134.8
+2025-07-08 16:17:08 [info]: Fetching quote for META from YFinance
+2025-07-08 16:17:08 [info]: Successfully fetched quote from YFinance for META: $718.35
+2025-07-08 16:17:08 [info]: Fetching quote for AMZN from YFinance
+2025-07-08 16:17:08 [info]: Successfully fetched quote from YFinance for AMZN: $223.47
+2025-07-08 16:17:08 [info]: Top gainers fetched: 1 stocks
+2025-07-08 16:17:08 [info]: 127.0.0.1 - - [08/Jul/2025:07:17:08 +0000] "GET /api/stocks/top-gainers HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 16:17:12 [info]: Fetching chart data for MSFT, period: 1d, interval: 5m
+2025-07-08 16:17:12 [info]: Successfully fetched chart data for MSFT: 79 points
+2025-07-08 16:17:12 [info]: 127.0.0.1 - - [08/Jul/2025:07:17:12 +0000] "GET /api/stocks/chart/MSFT?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 16:17:14 [info]: Fetching chart data for GOOGL, period: 1d, interval: 5m
+2025-07-08 16:17:14 [info]: Successfully fetched chart data for GOOGL: 79 points
+2025-07-08 16:17:14 [info]: 127.0.0.1 - - [08/Jul/2025:07:17:14 +0000] "GET /api/stocks/chart/GOOGL?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-08 16:17:17 [info]: Fetching chart data for TSLA, period: 1d, interval: 5m
+2025-07-08 16:17:17 [info]: Successfully fetched chart data for TSLA: 79 points
+2025-07-08 16:17:17 [info]: 127.0.0.1 - - [08/Jul/2025:07:17:17 +0000] "GET /api/stocks/chart/TSLA?interval=5m&period=1d HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"

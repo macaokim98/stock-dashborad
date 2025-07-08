@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { useStockData } from './hooks/useStockData';
+import { useWebSocket } from './hooks/useWebSocket';
 import LoadingSpinner from './components/LoadingSpinner';
+import StockChart from './components/StockChart';
+import VolumeIndicator from './components/VolumeIndicator';
+import './components/StockChart.css';
+import './components/VolumeIndicator.css';
 
 const App: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [selectedStock, setSelectedStock] = useState('AAPL');
+  const [showChart, setShowChart] = useState(true);
   const { stocks, marketIndices, portfolioData, loading, error, refreshData } = useStockData();
+  const { connected, subscribeToStocks, subscribeToPortfolio, subscribeToNotifications } = useWebSocket();
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('darkMode');
@@ -13,6 +21,23 @@ const App: React.FC = () => {
       setIsDarkMode(JSON.parse(savedTheme));
     }
   }, []);
+
+  useEffect(() => {
+    let subscribed = false;
+    
+    if (connected && !subscribed) {
+      console.log('Subscribing to WebSocket data...');
+      subscribeToStocks(['AAPL', 'MSFT', 'GOOGL', 'TSLA', 'AMZN']);
+      subscribeToPortfolio();
+      subscribeToNotifications();
+      subscribed = true;
+    }
+    
+    return () => {
+      subscribed = false;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [connected]); // Intentionally omit function dependencies to prevent infinite loop
 
   const toggleTheme = () => {
     const newTheme = !isDarkMode;
@@ -31,6 +56,14 @@ const App: React.FC = () => {
           <button className="nav-btn">Portfolio</button>
           <button className="nav-btn">Analytics</button>
           <button className="nav-btn active">Dashboard</button>
+          <div className="websocket-status">
+            <span className={`status-indicator ${connected ? 'connected' : 'disconnected'}`}>
+              {connected ? '🟢' : '🔴'}
+            </span>
+            <span className="status-text">
+              {connected ? 'Live' : 'Offline'}
+            </span>
+          </div>
           <button className="theme-switch" onClick={toggleTheme}>
             {isDarkMode ? '☀️' : '🌙'}
           </button>
@@ -121,10 +154,17 @@ const App: React.FC = () => {
                       <span className="holding-name">{stock.name}</span>
                     </div>
                     <div className="holding-data">
-                      <span className="holding-price">${stock.price.toFixed(2)}</span>
-                      <span className={`holding-change ${stock.changePercent >= 0 ? 'positive' : 'negative'}`}>
-                        {stock.changePercent >= 0 ? '+' : ''}{stock.changePercent.toFixed(1)}%
-                      </span>
+                      <div className="holding-price-data">
+                        <span className="holding-price">${stock.price.toFixed(2)}</span>
+                        <span className={`holding-change ${stock.changePercent >= 0 ? 'positive' : 'negative'}`}>
+                          {stock.changePercent >= 0 ? '+' : ''}{stock.changePercent.toFixed(1)}%
+                        </span>
+                      </div>
+                      <VolumeIndicator 
+                        volume={1250000} 
+                        averageVolume={1000000}
+                        className="holding-volume"
+                      />
                     </div>
                   </div>
                 ))}
@@ -134,26 +174,37 @@ const App: React.FC = () => {
           
           <div className="card chart-card">
             <div className="card-header">
-              <h3>Portfolio Performance</h3>
-              <div className="chart-controls">
-                <button className="chart-btn active">Line</button>
-                <button className="chart-btn">Area</button>
-                <button className="chart-btn">Candle</button>
+              <h3>주식 차트</h3>
+              <div className="chart-stock-selector">
+                <select 
+                  value={selectedStock} 
+                  onChange={(e) => setSelectedStock(e.target.value)}
+                  className="stock-select"
+                >
+                  <option value="AAPL">Apple (AAPL)</option>
+                  <option value="MSFT">Microsoft (MSFT)</option>
+                  <option value="GOOGL">Alphabet (GOOGL)</option>
+                  <option value="TSLA">Tesla (TSLA)</option>
+                  <option value="AMZN">Amazon (AMZN)</option>
+                  <option value="NVDA">NVIDIA (NVDA)</option>
+                  <option value="META">Meta (META)</option>
+                </select>
+                <button 
+                  className={`chart-toggle-btn ${showChart ? 'active' : ''}`}
+                  onClick={() => setShowChart(!showChart)}
+                >
+                  {showChart ? '차트 숨기기' : '차트 보기'}
+                </button>
               </div>
             </div>
             <div className="card-content">
-              <div className="chart-container">
+              {showChart ? (
+                <StockChart symbol={selectedStock} height={350} />
+              ) : (
                 <div className="chart-placeholder">
-                  <div className="chart-line"></div>
-                  <div className="chart-points">
-                    <div className="point" style={{left: '10%', bottom: '20%'}}></div>
-                    <div className="point" style={{left: '30%', bottom: '40%'}}></div>
-                    <div className="point" style={{left: '50%', bottom: '60%'}}></div>
-                    <div className="point" style={{left: '70%', bottom: '80%'}}></div>
-                    <div className="point" style={{left: '90%', bottom: '70%'}}></div>
-                  </div>
+                  <p>차트가 숨겨져 있습니다. "차트 보기" 버튼을 클릭하세요.</p>
                 </div>
-              </div>
+              )}
             </div>
           </div>
           

@@ -1,0 +1,13 @@
+2025-07-08 14:22:03 [info]: Portfolio updates started (10000ms interval)
+2025-07-08 14:22:03 [info]: Starting stock data streamer
+2025-07-08 14:22:03 [info]: Market data streaming started (5000ms interval)
+2025-07-08 14:22:03 [info]: 🚀 WebSocket server running on port 3002
+2025-07-08 14:22:03 [info]: 📡 Real-time stock data streaming active
+2025-07-08 14:22:03 [info]: 🌍 Environment: development
+2025-07-08 14:22:11 [info]: SIGTERM received, shutting down gracefully
+2025-07-08 14:22:11 [info]: Portfolio updates started (10000ms interval)
+2025-07-08 14:22:11 [info]: Starting stock data streamer
+2025-07-08 14:22:11 [info]: Market data streaming started (5000ms interval)
+2025-07-08 14:22:11 [info]: 🚀 WebSocket server running on port 3002
+2025-07-08 14:22:11 [info]: 📡 Real-time stock data streaming active
+2025-07-08 14:22:11 [info]: 🌍 Environment: development

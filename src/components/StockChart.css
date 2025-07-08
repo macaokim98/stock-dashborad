@@ -1,0 +1,234 @@
+/* Stock Chart Styles */
+.chart-container {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+}
+
+.chart-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.date-range-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.chart-date-picker {
+  margin-right: 1rem;
+}
+
+.chart-type-selector,
+.period-selector {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chart-type-btn,
+.period-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e8f0;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  color: #64748b;
+}
+
+.chart-type-btn:hover,
+.period-btn:hover {
+  border-color: #2563eb;
+  background: #f8fafc;
+}
+
+.chart-type-btn.active,
+.period-btn.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.interval-select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: white;
+  font-size: 0.875rem;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.interval-select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.chart-content {
+  position: relative;
+}
+
+.chart-loading,
+.chart-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  color: #64748b;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e2e8f0;
+  border-top: 3px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.retry-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease;
+}
+
+.retry-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Tooltip Styles */
+.chart-tooltip {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 0.875rem;
+}
+
+.tooltip-label {
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tooltip-content p {
+  margin: 0.25rem 0;
+  display: flex;
+  justify-content: space-between;
+  min-width: 140px;
+}
+
+.tooltip-open { color: #64748b; }
+.tooltip-high { color: #059669; }
+.tooltip-low { color: #dc2626; }
+.tooltip-close { color: #1e293b; font-weight: 600; }
+.tooltip-volume { color: #7c3aed; }
+
+/* Dark Mode Styles */
+.dark-mode .chart-container {
+  background: #1e293b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .chart-type-btn,
+.dark-mode .period-btn,
+.dark-mode .interval-select {
+  background: #334155;
+  border-color: #475569;
+  color: #e2e8f0;
+}
+
+.dark-mode .chart-type-btn:hover,
+.dark-mode .period-btn:hover {
+  background: #475569;
+  border-color: #3b82f6;
+}
+
+.dark-mode .chart-type-btn.active,
+.dark-mode .period-btn.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.dark-mode .interval-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.dark-mode .chart-loading,
+.dark-mode .chart-error {
+  color: #94a3b8;
+}
+
+.dark-mode .loading-spinner {
+  border-color: #475569;
+  border-top-color: #3b82f6;
+}
+
+.dark-mode .retry-btn {
+  background: #3b82f6;
+}
+
+.dark-mode .retry-btn:hover {
+  background: #2563eb;
+}
+
+.dark-mode .chart-tooltip {
+  background: #334155;
+  border-color: #475569;
+  color: #e2e8f0;
+}
+
+.dark-mode .tooltip-label {
+  color: #f1f5f9;
+  border-bottom-color: #475569;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chart-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .chart-type-selector,
+  .period-selector {
+    justify-content: center;
+  }
+  
+  .chart-type-btn,
+  .period-btn {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .interval-select {
+    align-self: center;
+    min-width: 120px;
+  }
+}

@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
+import axios from 'axios';
 
 interface StockData {
   symbol: string;
@@ -101,73 +102,70 @@ export const useStockData = () => {
     totalGainPercent: 24.5
   };
 
-  const fetchStockData = async () => {
+  const refreshData = () => {
+    fetchStockDataCallback();
+  };
+
+  const fetchStockDataCallback = useCallback(async () => {
     try {
       setLoading(true);
       
-      // Simulate API delay
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      // For now, use mock data
-      // In production, replace with actual API calls
+      // Fetch real data from backend API
+      const [marketRes, stocksRes, portfolioRes] = await Promise.all([
+        axios.get('/api/stocks/market-overview'),
+        axios.get('/api/stocks/top-gainers').then(res => res.data.data.slice(0, 5)),
+        axios.get('/api/portfolio/overview')
+      ]);
+
+      // Transform market data
+      const marketData = marketRes.data.data.map((item: any) => ({
+        name: item.name,
+        symbol: item.symbol,
+        value: item.value,
+        change: item.change,
+        changePercent: item.changePercent
+      }));
+
+      // Transform stocks data  
+      const stocksData = stocksRes.map((item: any) => ({
+        symbol: item.symbol,
+        name: item.name,
+        price: item.price,
+        change: item.change,
+        changePercent: item.changePercent
+      }));
+
+      // Use portfolio data or fallback to mock
+      const portfolioData = portfolioRes.data.success ? portfolioRes.data.data : mockPortfolioData;
+
+      setMarketIndices(marketData);
+      setStocks(stocksData);
+      setPortfolioData(portfolioData);
+      setError(null);
+    } catch (err) {
+      console.error('Error fetching stock data:', err);
+      // Fallback to mock data on error
       setStocks(mockStockData);
       setMarketIndices(mockMarketIndices);
       setPortfolioData(mockPortfolioData);
-      
-      setError(null);
-    } catch (err) {
-      setError('Failed to fetch stock data');
-      console.error('Error fetching stock data:', err);
+      setError('Using demo data - API unavailable');
     } finally {
       setLoading(false);
     }
-  };
-
-  const refreshData = () => {
-    fetchStockData();
-  };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
-    fetchStockData();
+    fetchStockDataCallback();
     
-    // Set up real-time updates every 30 seconds
+    // Set up real-time updates every 5 minutes (300 seconds) to avoid rate limiting
     const interval = setInterval(() => {
-      // Update mock data with small random changes
-      setStocks(prevStocks => 
-        prevStocks.map(stock => {
-          const randomChange = (Math.random() - 0.5) * 10;
-          const newPrice = Math.max(0.01, stock.price + randomChange);
-          const change = newPrice - stock.price;
-          const changePercent = (change / stock.price) * 100;
-          
-          return {
-            ...stock,
-            price: Number(newPrice.toFixed(2)),
-            change: Number(change.toFixed(2)),
-            changePercent: Number(changePercent.toFixed(2))
-          };
-        })
-      );
-      
-      setMarketIndices(prevIndices =>
-        prevIndices.map(index => {
-          const randomChange = (Math.random() - 0.5) * 50;
-          const newValue = Math.max(0.01, index.value + randomChange);
-          const change = newValue - index.value;
-          const changePercent = (change / index.value) * 100;
-          
-          return {
-            ...index,
-            value: Number(newValue.toFixed(2)),
-            change: Number(change.toFixed(2)),
-            changePercent: Number(changePercent.toFixed(2))
-          };
-        })
-      );
-    }, 30000);
+      console.log('Refreshing stock data...');
+      fetchStockDataCallback();
+    }, 300000); // 5 minutes instead of frequent updates
 
     return () => clearInterval(interval);
-  }, []);
+  }, [fetchStockDataCallback]);
 
   return {
     stocks,

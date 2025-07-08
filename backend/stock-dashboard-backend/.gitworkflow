@@ -1,0 +1,79 @@
+# Git Worktree Workflow Guide
+
+## Current Worktree Structure
+```
+stock-dashboard/          (main branch - selected design)
+stock-dashboard-design1/  (design1 branch - glass morphism)
+stock-dashboard-design2/  (design2 branch - cyberpunk terminal)
+stock-dashboard-design3/  (design3 branch - minimalist professional)
+```
+
+## Conflict-Free Integration Strategy
+
+### 1. Branch Isolation Rules
+- **Main branch**: Contains the selected design (Design 3) + core functionality
+- **Design branches**: Keep design-specific code isolated
+- **Feature branches**: Create from main for new features
+
+### 2. Merge Strategy
+```bash
+# Create feature branch from main
+git checkout main
+git checkout -b feature/new-functionality
+
+# Work on feature...
+git add .
+git commit -m "feat: add new functionality"
+
+# Merge back to main
+git checkout main
+git merge feature/new-functionality --no-ff
+```
+
+### 3. Design Updates
+```bash
+# To update a design variant
+cd ../stock-dashboard-design1
+git cherry-pick <commit-hash>  # Cherry-pick specific changes
+
+# To test design with new features
+git merge main  # Bring in core functionality changes
+```
+
+### 4. Conflict Prevention
+- Keep design-specific styles in separate CSS classes
+- Use CSS custom properties for theme variables
+- Modular component structure
+- Separate design logic from business logic
+
+### 5. Integration Commands
+```bash
+# List all worktrees
+git worktree list
+
+# Add new worktree for feature
+git worktree add ../stock-dashboard-feature -b feature/api-integration
+
+# Remove completed worktree
+git worktree remove ../stock-dashboard-feature
+
+# Prune deleted worktrees
+git worktree prune
+```
+
+### 6. Best Practices
+- Always commit before switching worktrees
+- Use descriptive branch names (feature/, bugfix/, design/)
+- Test in isolated worktree before merging
+- Keep worktrees synchronized with `git fetch` regularly
+- Use `git worktree list` to check status
+
+### 7. Emergency Recovery
+```bash
+# If worktree gets corrupted
+git worktree remove --force <path>
+git branch -D <branch-name>
+git worktree add <path> -b <branch-name>
+```
+
+This workflow ensures clean separation of concerns and prevents merge conflicts between design variants and core functionality.
